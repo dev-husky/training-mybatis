@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="asia.laevatein.training.mybatis.mapper.HeroMapper">
+	<resultMap id="heroResult" type="Hero">
+		<result property="id" column="id" />
+		<result property="tiZhi" column="ti_zhi" />
+		<result property="liDao" column="li_dao" />
+		<result property="shenFa" column="shen_fa" />
+		<result property="genGu" column="gen_gu" />
+		<result property="yuanQi" column="yuan_qi" />
+	</resultMap>
+	
+	<select id="findHeroById" parameterType="int" resultMap="heroResult">
+	 	SELECT * FROM jx_hero WHERE id = #{id}
+	</select>
+	
+</mapper>
