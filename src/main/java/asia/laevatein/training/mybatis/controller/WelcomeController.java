@@ -7,7 +7,7 @@
  * @description: <描述>
  *
  */
-package asia.laevatein.training.mybaits.controller;
+package asia.laevatein.training.mybatis.controller;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
